@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontlett Virtualting - Global staff sharing platform</title>
+    <meta name="description" content="Hiring the right talent for your business shouldn’t break the bank! Get work-life balance, design your own work pattern and get started fast.   ">
+    <!-- Bootstrap CSS-->
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <!-- <link rel="stylesheet" href="./src/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNSJXYNZ1H"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GNSJXYNZ1H');
+    </script>
+</head>
+
+<body>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="./">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Frontlett logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav" aria-controls="toggleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+                <!--  <li class="nav-item">
+                <a class="nav-link" href="our_pitch">Pitch</a>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="cs-hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 pt-4">
+                <div class="content">
+                <h1 class="title">
+                Let’s you move faster</h1>
+                    <p class="desc">Hire skilled team at a quarter of the cost with Virtualting</p>
+                    <p class="desc mt-2">Build your own schedule and work pattern on Frontlett.</p>
+                   <!-- <form method="POST">
+                   <input type="email" name="email" id="emailInput" placeholder="Enter your email" required />
+                   <button type="submit">Request Invite</button>
+                   </form> -->
+                    <!-- Begin Mailchimp Signup Form -->
+                    <div id="mc_embed_signup" class="mt-5">
+                        <form id="subscribe" method="POST">
+                            <div id="mc_embed_signup_scroll" class="form-inline">
+                                <div class="mc-field-group m-0 mr-1 w-50">
+                                    <input type="email" value="" name="email" class="required email form-control cs-input w-100" id="mce-EMAIL" placeholder="Enter your email addresss">
+                                </div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0f9fb3c33d4b6bba6d1a83148_aa12c94228" tabindex="-1" value=""></div>
+                                <div class="clear">
+                                <input type="submit" value="Request Invite" name="subscribe" id="mc-embedded-subscribe" class="  btn cs-btn cs-btn--primary">
+                                </div>
+                            </div>
+                            <div id="mce-responses" class="clear mt-5">
+                                                            <div class="response text-danger" id="mce-error-response">
+                                                          </div>
+                                                        </div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->
+                </div>
+            </div>
+            <div class="col-lg-6 pt-4">
+                <div class="">
+                    <img src="{{ url_for('static', filename='images/1.png') }}" class="img-fluid" alt="Frontlett Coming soon intro image">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Nimbou Chatbot. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="footer-copyright">© 2025 Frontlett. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#!"> Privacy & Legal Policies</a> <a href="#!">About Ads</a> <a href="#!">Do Not Sell My Personal Information</a> <a href="#!">Cookie Preferences</a>
+        </div>
+    </div>
+</footer>
+<!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!-- Popper CDN -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+(function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+}(jQuery));
+var $mcj = jQuery.noConflict(true);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+<script src="./src/main.js"></script>
+<script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson }};
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
