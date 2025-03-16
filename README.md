@@ -13,7 +13,7 @@ This repo contains the starter files.
 ```sh
 git clone https://github.com/mudathir-ay/NIMBOU_CLOUD.git
 cd NIMBOU_CLOUD
-conda create -n <env_name> python=3.8
+conda create -n <env_name> python=3.10
 conda activate <env_name>
 pip install -r requirements.txt
 ```
