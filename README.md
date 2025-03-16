@@ -11,17 +11,14 @@ This repo contains the starter files.
 
 ### **Clone the Repository & Create a Virtual Environment**
 ```sh
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
-python3 -m venv venv
-source venv/bin/activate  # On Mac/Linux
-venv\Scripts\activate     # On Windows
+git clone https://github.com/mudathir-ay/NIMBOU_CLOUD.git
+cd NIMBOU_CLOUD
+conda create -n <env_name> python=3.8
+conda activate <env_name>
+pip install -r requirements.txt
+```
 
-
-#### **Clone the Repository & Create a Virtual Environment**
+#### **To run the chatbot locally**
 ```sh
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
-python3 -m venv venv
-source venv/bin/activate  # On Mac/Linux
-venv\Scripts\activate     # On Windows
+python app.py
+```
